@@ -121,7 +121,7 @@
       }
 
       try {
-        const res = await fetch(`data.json`);
+        const res = await fetch("https://raw.githubusercontent.com/Geroimzx/test/main/data.json");
         if (!res.ok) throw new Error('Проблема з API');
         const json = await res.json();
 
